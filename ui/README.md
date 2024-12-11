@@ -10,7 +10,6 @@
  
  By default is also converts Unicode fullwidth (\uff01-\uff5e) characters to latin1 characters.   
 
-
 # Usage
 ## Default
 ```html
