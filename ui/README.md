@@ -5,15 +5,32 @@
 
 **Compatible with Quasar UI v2 and Vue 3**.
 
-
-
-
-# Directive v-paste-plain-text
-> Short description of the directive
+# Description
+ The directive **v-paste-plain-text** will copy **"html/plain"** from the clipboard and then paste it to your control.  It works on **\<q-input\>**  and **\<q-textarea\>**.
+ 
+ By default is also converts Unicode fullwidth (\uff01-\uff5e) characters to latin1 characters.   
 
 
 # Usage
-
+## Default
+```html
+<input v-paste-plain-text v-model="text" />
+<textarea v-paste-plain-text v-model="text" />
+```
+## Disable fullwidth conversion 
+```html
+<input v-paste-plain-text="{nofw=false}"    v-model="text" />
+```
+## Disable smart quote conversion
+```html
+<input v-paste-plain-text="{quote=false}"    v-model="text" />
+```
+## Disable Both 
+```html
+<input v-paste-plain-text="{quote=false, nofw=false}"    v-model="text" />
+```
+****
+# Install
 ## Quasar CLI project
 
 Create and register a boot file:
@@ -136,4 +153,4 @@ If you have a component that has assets, like language or icon-sets, you will ne
 If you appreciate the work that went into this, please consider [donating to Quasar](https://donate.quasar.dev).
 
 # License
-MIT (c) jeffreyindc <simpson@yfu.org>
+MIT (c) Jeffrey Simpson <simpson@yfu.org>

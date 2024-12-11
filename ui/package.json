@@ -2,7 +2,7 @@
   "name": "quasar-ui-paste-plain-text",
   "version": "0.0.1",
   "author": "jeffreyindc <simpson@yfu.org>",
-  "description": "a directive that foces a paste into a control to be text/plain",
+  "description": "a directive that forces a paste into a control to be text/plain",
   "license": "MIT",
   "module": "dist/index.esm.js",
   "main": "dist/index.common.js",
